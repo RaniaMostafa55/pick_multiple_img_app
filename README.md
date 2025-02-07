@@ -1,16 +1,17 @@
-# pick_images_app
+# pick_multiple_images_app
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project helps you pick multiple images and view them in your app.
 
-A few resources to get you started if this is your first Flutter project:
+## Widgets used in homePage:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  - Scaffold
+      - appBar to add title of the page
+      - body
+          - SingleChildScrollView to make page scrollable
+              - Column to put widgets vertically
+                  - ListView to view a generated list of images
+                  - ElevatedButton to use image_picker to pick mutiple images and store them in a list
